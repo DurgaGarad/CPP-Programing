@@ -1,0 +1,21 @@
+/*
+Give the number and do the sum and product
+
+input:- 22
+output:- sum=4,product=4
+*/
+
+#include <iostream>
+using namespace std;
+int main() {
+	int n,sum=0,product=1,temp;
+	cout<<"Enter the number :";
+	cin>>n;
+	for(int i=n ; i>0 ; i/=10){
+	    temp=n%10;
+	    sum+=temp;
+	    product*=temp;
+	}
+	cout<<"sum is :"<<sum<<"\n";
+	cout<<"product is :"<<product;
+}
